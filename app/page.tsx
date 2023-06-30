@@ -1,11 +1,12 @@
-import { Hero } from "@/components";
+import React from 'react';
+import { HomePage } from '@/app-sections';
 
-
-export default function Home() {
+function Zulu() {
   return (
-    <main className="overflow-hidden">
-      <Hero/>
-    </main>
+    <div>
+        <HomePage/>
+    </div>
   )
 }
-  
+
+export default Zulu;
