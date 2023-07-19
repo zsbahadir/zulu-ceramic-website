@@ -4,11 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  margin: 0;
+body {
+  /* mx-5 my-5 */
   padding: 0;
   box-sizing: border-box;
-} */
+}
+
+@layer components {
+  .btnPink {
+    @apply   bg-pink  text-white rounded-md hover:bg-hover-pink focus:outline-none w-48 h-8
+  }
+}
 
 .flexCenter {
   @apply flex justify-center items-center;

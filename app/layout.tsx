@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Zulu Ceramic',
+  title: 'Zulu Ceramics',
   description: 'Zulu Ceramic Website',
 }
 
