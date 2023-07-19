@@ -8,24 +8,50 @@ module.exports = {
   // content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      'tablet': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
     },
+    // screens: {
+    //   'tablet': '640px',
+    //   // => @media (min-width: 640px) { ... }
+
+    //   'laptop': '1024px',
+    //   // => @media (min-width: 1024px) { ... }
+
+    //   'desktop': '1280px',
+    //   // => @media (min-width: 1280px) { ... }
+    // },
+
+//     screens: {
+//       'sm': '640px',
+//       // => @media (min-width: 640px) { ... }
+
+//       'md': '768px',
+//       // => @media (min-width: 768px) { ... }
+
+//       'lg': '1024px',
+//       // => @media (min-width: 1024px) { ... }
+
+//       'xl': '1280px',
+//       // => @media (min-width: 1280px) { ... }
+
+//       '2xl': '1536px',
+//       // => @media (min-width: 1536px) { ... }
+//     }
+//   }
+// }
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
       colors : {
         'nav-border': '#C6285D',
-        'light-pink': 'D7648A',
-        'black-100': '#000000',
-        'text-brown': '#432C2C'
+        'pink': '#D7648A',
+        'black': '#000000',
+        'text-brown': '#432C2C',
+        'hover-pink': '#CC4974',
       },
       styles: {
         'body': {

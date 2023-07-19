@@ -1,5 +1,6 @@
 import React from 'react';
-import { HomePage } from '@/app-sections';
+import HomePage from './welcome/page';
+
 
 function Zulu() {
   return (
