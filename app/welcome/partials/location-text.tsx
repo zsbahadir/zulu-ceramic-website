@@ -36,8 +36,8 @@ function LocationText(props: LocationTextProps) {
   ];
 
   return (
-    <div className="inline-flex mx-6">
-      <span>
+    <div className="inline-flex" >
+      <span className="mx-10">
         <Icon size={24} color="black" />
       </span>
       <div>
@@ -48,7 +48,7 @@ function LocationText(props: LocationTextProps) {
               <Link
                 href={link.websiteLink}
                 target="_blank"
-                className="mx-8 italic hover:font-semibold"
+                className="mr-12 italic hover:font-semibold"
               >
                 {link.websiteText}
               </Link>
@@ -60,7 +60,7 @@ function LocationText(props: LocationTextProps) {
                 key={link.websiteText}
                 content="Please visit the store."
               >
-                <span className="mx-8 italic">{link.websiteText}</span>
+                <span className="mr-12 italic">{link.websiteText}</span>
               </Tooltip>
             );
           }

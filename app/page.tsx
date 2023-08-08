@@ -1,11 +1,13 @@
 import React from 'react';
 import HomePage from './welcome/page';
+import AboutPage from './about/page';
 
 
 function Zulu() {
   return (
-    <div>
+    <div className='mx-7 mt-5'>
         <HomePage/>
+        <AboutPage/>
     </div>
   )
 }
