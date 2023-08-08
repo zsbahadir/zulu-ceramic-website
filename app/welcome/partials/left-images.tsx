@@ -82,7 +82,7 @@ function LeftImages() {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="px-2 justify-center text-gray-300 "
+            className="px-2 justify-center text-gray-300"
           >
             <FaSquare size={10} />
           </div>

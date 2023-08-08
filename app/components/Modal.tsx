@@ -5,7 +5,6 @@ interface ModalProps {
     children: ReactNode;
     title: string | number;
     onClose: () => void;
-
 }
 
 const Modal = (props: ModalProps) => {

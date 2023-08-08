@@ -7,12 +7,11 @@ import LocationText from "./partials/location-text";
 
 //Components
 import Button from "../components/Button";
-import ModalComponent from "../components/Modal";
 
 function HomePage() {
   return (
     // Header Text Image
-    <div className="w-[1400px] h-[982px] relative mx-2 my-2 grid grid-cols-3">
+    <div className="relative my-2 grid grid-cols-3 mb-28">
       {/* Header and Text start */}
       <div className=" col-span-2">
         {/* Navbar start */}

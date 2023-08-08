@@ -61,6 +61,9 @@ module.exports = {
           marginTop: '30px',
           marginBottom: '30px',
         },
+        animation: {
+          'spin-slow': 'move 3s linear infinite',
+        }
     },
   },
 },
