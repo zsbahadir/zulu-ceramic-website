@@ -1,4 +1,3 @@
-"use client";
 
 //import Component
 import AutoSlider from "@/app/components/AutoSlider";
