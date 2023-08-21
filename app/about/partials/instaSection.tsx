@@ -3,24 +3,24 @@
 import AutoSlider from "@/app/components/AutoSlider";
 
 //import Photos
-import instA from "@/app/public/images/instagram-pictures/instA.svg";
-import instB from "@/app/public/images/instagram-pictures/instB.jpeg";
-import instC from "@/app/public/images/instagram-pictures/instC.jpeg";
-import instD from "@/app/public/images/instagram-pictures/instD.jpeg";
-import instE from "@/app/public/images/instagram-pictures/instE.jpeg";
-import instF from "@/app/public/images/instagram-pictures/instF.jpeg";
-import instG from "@/app/public/images/instagram-pictures/instG.jpeg";
-import instH from "@/app/public/images/instagram-pictures/instH.jpeg";
-import instI from "@/app/public/images/instagram-pictures/instI.jpeg";
-import instJ from "@/app/public/images/instagram-pictures/instJ.jpeg";
-import instK from "@/app/public/images/instagram-pictures/instK.jpeg";
-import instL from "@/app/public/images/instagram-pictures/instL.jpeg";
-import instM from "@/app/public/images/instagram-pictures/instM.jpeg";
-import instN from "@/app/public/images/instagram-pictures/instN.jpeg";
-import instO from "@/app/public/images/instagram-pictures/instO.jpeg";
-import instP from "@/app/public/images/instagram-pictures/instP.jpeg";
-import instQ from "@/app/public/images/instagram-pictures/instQ.jpeg";
-import instR from "@/app/public/images/instagram-pictures/instR.jpeg";
+import instA from "@/app/public/images/instagram-images/instA.svg";
+import instB from "@/app/public/images/instagram-images/instB.jpeg";
+import instC from "@/app/public/images/instagram-images/instC.jpeg";
+import instD from "@/app/public/images/instagram-images/instD.jpeg";
+import instE from "@/app/public/images/instagram-images/instE.jpeg";
+import instF from "@/app/public/images/instagram-images/instF.jpeg";
+import instG from "@/app/public/images/instagram-images/instG.jpeg";
+import instH from "@/app/public/images/instagram-images/instH.jpeg";
+import instI from "@/app/public/images/instagram-images/instI.jpeg";
+import instJ from "@/app/public/images/instagram-images/instJ.jpeg";
+import instK from "@/app/public/images/instagram-images/instK.jpeg";
+import instL from "@/app/public/images/instagram-images/instL.jpeg";
+import instM from "@/app/public/images/instagram-images/instM.jpeg";
+import instN from "@/app/public/images/instagram-images/instN.jpeg";
+import instO from "@/app/public/images/instagram-images/instO.jpeg";
+import instP from "@/app/public/images/instagram-images/instP.jpeg";
+import instQ from "@/app/public/images/instagram-images/instQ.jpeg";
+import instR from "@/app/public/images/instagram-images/instR.jpeg";
 
 function InstaSection() {
   const instaImages = [

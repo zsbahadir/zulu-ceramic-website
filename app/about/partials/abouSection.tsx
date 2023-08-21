@@ -3,8 +3,17 @@ import ImageContainer from "@/app/components/ImageContainer";
 
 import paintingCup from "@/app/public/images/paintingCup.png";
 
+import {storage} from '@/app/firebase'
+
 
 function AbouSection() {
+
+  //const bucket = storageRef.bucket('my-bucket');
+  //const url = bucket.getDownloadUrl('images/0.jpg');
+
+//<img src={url} />
+
+
   return (
   
         <div className="inline-flex ml-14">
