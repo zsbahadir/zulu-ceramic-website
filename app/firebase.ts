@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "zulu-ceramic-website",
   storageBucket: "zulu-ceramic-website.appspot.com",
   messagingSenderId: "747836770620",
-  appId: "1:747836770620:web:df2c3589008938def0f639"
+  appId: "1:747836770620:web:df2c3589008938def0f639",
 };
 
 // Initialize Firebase
@@ -21,6 +21,6 @@ const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 
 // Create a storage reference from our storage service
-const storageRef = ref(storage, 'instImages');
+const storageRef = ref(storage, "instImages");
 
 export { storage, storageRef };

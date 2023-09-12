@@ -1,8 +1,4 @@
-import HomePage from "./welcome/page";
-import AboutPage from "./about/page";
+// import HomePage from "./welcomePage/page";
+// import AboutPage from "./aboutPage/page";
 
-
-export {
-    HomePage,
-    AboutPage
-}
+// export { HomePage, AboutPage };

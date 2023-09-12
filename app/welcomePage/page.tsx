@@ -1,8 +1,8 @@
 //Partials
-import Header from "@/app/welcome/partials/Header";
-import HomePageText from "@/app/welcome/partials/home-page-text";
-import LeftImages from "@/app/welcome/partials/left-images";
-import FourImages from "@/app/welcome/partials/four-images";
+import Header from "@/app/welcomePage/partials/Header";
+import HomePageText from "@/app/welcomePage/partials/home-page-text";
+import LeftImages from "@/app/welcomePage/partials/left-images";
+import FourImages from "@/app/welcomePage/partials/four-images";
 import LocationText from "./partials/location-text";
 
 //Components
@@ -32,7 +32,7 @@ function HomePage() {
             <p>Contact Us</p>
           </Button>
         </div>
-        <div className="mt-14">
+        <div className="mt-10">
           <LocationText />
         </div>
       </div>

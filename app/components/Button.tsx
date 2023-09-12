@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'width' | 'height'> {
+interface ButtonProps
+  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "width" | "height"> {
   width: number;
   height: number;
 }
@@ -10,10 +11,7 @@ function Button(props: ButtonProps) {
   const { children, width, height, ...rest } = props;
 
   return (
-    <button
-    {...rest}
-      style={{ width, height }}
-    >
+    <button {...rest} style={{ width, height }}>
       {children}
     </button>
   );
