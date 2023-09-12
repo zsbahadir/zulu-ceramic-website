@@ -1,4 +1,3 @@
-
 //import Images
 import imageA from "@/app/public/images/imageA.jpg";
 import imageB from "@/app/public/images/imageB.jpg";
@@ -34,8 +33,13 @@ function FourImages() {
         {images?.map((image: any) => {
           return (
             <div>
-              <ImageContainer src={image?.src} alt={image?.alt} width={167}
-              height={167} rounded  />
+              <ImageContainer
+                src={image?.src}
+                alt={image?.alt}
+                width={167}
+                height={167}
+                rounded
+              />
             </div>
           );
         })}

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 //Import Next
 import Image from "next/image";
@@ -23,7 +23,8 @@ interface AutoSliderProps {
 }
 
 function AutoSlider(props: AutoSliderProps) {
-  const { images, spaceBetween, slidesPerView, width, height, clickable } = props;
+  const { images, spaceBetween, slidesPerView, width, height, clickable } =
+    props;
 
   return (
     <>

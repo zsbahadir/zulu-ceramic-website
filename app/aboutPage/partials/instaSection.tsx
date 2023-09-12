@@ -1,4 +1,3 @@
-
 //import Component
 import AutoSlider from "@/app/components/AutoSlider";
 
@@ -47,7 +46,7 @@ function InstaSection() {
   return (
     <div className="w-screen flex justify-center">
       <div className="w-3/5">
-      <AutoSlider images={instaImages} slidesPerView={4} spaceBetween={4} />
+        <AutoSlider images={instaImages} slidesPerView={4} spaceBetween={4} />
       </div>
     </div>
   );

@@ -1,23 +1,25 @@
-import React from 'react'
-import Image from 'next/image';
+import LogoImage from "./LogoImage";
 
-import trademark from "@/app/public/images/trademark.png";
+//w-870 left-62
 
+interface HeaderLineProps {
+  lineWidth: number;
+}
 
-function HeaderLine() {
+function HeaderLine(props: HeaderLineProps) {
+  const { lineWidth } = props;
+
   return (
-    <div>
-          {/* logo */}
-      <Image
-        src={trademark}
-        alt="Trade Mark"
-        className="w-[83px] h-[80px] left-0 top-0 absolute rounded-2xl"
-      />
+    <div className="">
+      {/* logo */}
+      <LogoImage logoWidth={7} logoHeight={7} />
 
-      {/* Pink Line */}
-      <div className="w-[870px] h-[0px] left-[62px] top-[80px] absolute border th"></div>
+      {/* Line */}
+      <div
+        className={`w-[1378px] left-[62px] absolute border border-pink opacity-60`}
+      ></div>
     </div>
-  )
+  );
 }
 
 export default HeaderLine;
