@@ -10,14 +10,14 @@ const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Kullanıcının sayfayı aşağı kaydırıp kaydırmadığını izlemek için bir scroll olay dinleyicisi ekleyin.
+    // Add a scroll event listener to track whether the user scrolls down the page.
     window.addEventListener('scroll', () => {
       setIsVisible(window.scrollY > 300);
     });
   }, []);
 
   const scrollToTop = () => {
-    // Yukarı git düğmesine tıkladığınızda sayfayı en üstüne kaydırın
+    // Scroll to the top of the page when you click the go up button
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -25,14 +25,14 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    // isVisible true olduğunda düğmeyi görüntüleyin
-    isVisible && (
-       <button className="fixed bottom-10 right-10 p-2 rounded-full bg-pink text-white" onClick={scrollToTop}>
+    // Display button when isVisible is true
+
+       <button className="fixed bottom-10 right-10 p-2 rounded-full bg-pink text-white" onClick={scrollToTop}
+       style={{ display: isVisible ? 'block' : 'none' }}>
        <FaArrowAltCircleUp/>
      </button>
-
-    )
   );
 };
 
 export default ScrollToTopButton;
+
