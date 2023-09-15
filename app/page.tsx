@@ -1,16 +1,30 @@
-//Import Pages
-import HomePage from "./welcomePage/page";
-import AboutPage from "./aboutPage/page";
-import CollectionsPage from "./collectionsPage/page";
-import ContactPage from "./contactPage/page";
+//Import Containers
+import AboutPage from "@/app/containers/about/page";
+import Collections from "@/app/containers/collections";
+import ContactPage from "@/app/containers/contact";
+import HomePage from "@/app/containers/welcome";
+
+
+//Import Components
+import ScrollToTopButton from "@/components/ScrollToTop";
+
 
 function Zulu() {
   return (
     <div className="">
+      <div id = "home">
       <HomePage />
+      </div>
+      <div id = "about">
       <AboutPage />
-      <CollectionsPage />
+      </div>
+      <div id = "collections">
+      <Collections/>
+      </div>
+      <div id = "contact">
       <ContactPage />
+      </div>
+      <ScrollToTopButton/>
     </div>
   );
 }

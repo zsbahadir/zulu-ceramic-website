@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'BetterGrade'; /* Fontun adı */
+    src: url('../app/fonts/better-grade-font/BetterGrade-519DV.ttf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }
+
+  @font-face {
+    font-family: 'EmotionalRescue'; /* Fontun adı */
+    src: url('../app/fonts/emotional-rescue-font/EmotionalRescuePersonalUseRegular-PKY87.ttf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }
+
+  @font-face {
+    font-family: 'Flowerheart'; /* Fontun adı */
+    src: url('../app/fonts/flowerheart-font/FlowerheartpersonaluseRegular-AL9e2.otf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }
+
+  @font-face {
+    font-family: 'Rostina'; /* Fontun adı */
+    src: url('../app/fonts/rostina-font/Rostina-axrAg.ttf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }
+
+  @font-face {
+    font-family: 'StandingFlower'; /* Fontun adı */
+    src: url('../app/fonts/standing-flower-script-font/StandingFlowerScriptPersonal-L31Y3.otf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }
+
+  @font-face {
+    font-family: 'TelfordTown'; /* Fontun adı */
+    src: url('../app/fonts/telford-town-font/TelfordTownRegular-Wy2L4.ttf') format('truetype'); /* Font dosyasının yolu */
+    /* Diğer font özellikleri buraya eklenebilir, örneğin font-weight, font-style, vb. */
+  }

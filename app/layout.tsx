@@ -1,4 +1,20 @@
-import "./globals.css";
+import "@/styles/reset.css";
+import "@/styles/globals.css";
+
+//import Fonts
+import localFont from 'next/font/local'
+
+ 
+// Font files 
+// const myFont = localFont({
+//   src: './fonts/blablabla.ttf',  
+//   display: 'swap',
+// })
+
+//Import Components
+import Footer from "../components/Footer";
+
+
 
 export const metadata = {
   title: "Zulu Ceramics",
@@ -12,16 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+      {/* <Header/> */}
+      <main>{children}</main>
+      <Footer/>
+      </body>
     </html>
   );
 }
 
 
-{/* <html lang="en">
-<body>
-<Header/>
-<main>{children}</main>
-<Footer/>
-</body>
-</html> */}
