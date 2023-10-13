@@ -1,6 +1,7 @@
 "use client";
 
 //Import Next
+import React from "react";
 import Image from "next/image";
 
 // Import Swiper React components
@@ -29,7 +30,6 @@ function AutoSlider(props: AutoSliderProps) {
   return (
     <>
       <Swiper
-        modules={[Autoplay, Navigation]}
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
         autoplay={{
