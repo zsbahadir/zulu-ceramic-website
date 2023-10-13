@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide,  } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 
 // Import Swiper styles
@@ -14,9 +14,8 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 
 
-
 type SwiperProps = React.HTMLAttributes<HTMLDivElement> & {
-  modules?: SwiperModule[] | any[]; // modules özelliğini ekledik
+  modules?: Array<SwiperModule> | Array<any>; // modules özelliğini ekledik
   spaceBetween?: number;
   slidesPerView?: number;
   autoplay?: boolean | { delay: number; disableOnInteraction?: boolean };
