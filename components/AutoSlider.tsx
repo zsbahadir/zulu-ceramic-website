@@ -7,7 +7,6 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import { SwiperModule } from "swiper/types";
 
 // Import Swiper styles
 import "swiper/css";
@@ -27,6 +26,9 @@ type SwiperProps = React.HTMLAttributes<HTMLDivElement> & {
   height?: number;
 };
 
+interface SwiperModule {
+  // Import Swiper modules here
+}
 
 interface AutoSliderProps {
   images: any;
