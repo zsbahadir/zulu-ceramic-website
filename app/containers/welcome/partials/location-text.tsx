@@ -1,15 +1,19 @@
-//Import Next
+//import Link
 import Link from "next/link";
 
-//Import icons
+//import icons
 import { IconType } from "react-icons";
 import { FaMapMarkerAlt } from "react-icons/fa";
+
+//import Components
+import Text from "@/components/Text";
 
 interface LocationTextProps {
   icon?: IconType;
 }
 
 function LocationText(props: LocationTextProps) {
+
   const { icon: Icon = FaMapMarkerAlt } = props;
 
   //text and link data
@@ -44,31 +48,21 @@ function LocationText(props: LocationTextProps) {
 
   return (
     <div className="mx-10">
-    <div className="inline-flex">
-      <span className="mx-2" >
-        <Icon size={24} color="black" />
-      </span>
-      <div>
-        {/* for store has link */}
+
+    <div className="flex">
+        <Icon size={24} color="black" className="mx-2"/>
+      <div className="flex">
         {links?.map((link) => {
           
             return (
-              <Link
-                href={link.websiteLink}
-                target="_blank"
-                className="mr-6 italic hover:font-semibold"
-              >
-                {link.websiteText}
-              </Link>
+              <Text text={link.websiteText} href={link.websiteLink} italic className="mr-6 hover:font-semibold" />
             );
           
         })}
       </div>
-      
     </div>
-    <div>
-    <span className="italic text-xs ml-5 text-stone-400 ">* You can reach our store from the links below</span>
-    </div>
+
+    <Text  text={"* You can reach our store from the links below"} italic className="text-xs ml-5 text-stone-400" />
     </div>
   );
 }

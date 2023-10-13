@@ -16,7 +16,7 @@ const Modal = (props: ModalProps) => {
 
   return (
     <div>
-      <Button onClick={() => setOpen(true)} width={0} height={0}>
+      <Button onClick={() => setOpen(true)} width={0} height={40} label={"Modal"}>
         Open Modal
       </Button>
       {open ? (

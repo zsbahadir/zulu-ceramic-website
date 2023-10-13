@@ -1,13 +1,11 @@
 "use client";
 
-//Import React-Next
-import { useState, useEffect } from "react";
+//import React
+import { useState } from "react";
 
-//Import Next
-import Image from "next/image";
-
-//Import Icons
-import { FaSquare } from "react-icons/fa";
+//import components
+import Card from "@/components/Card";
+import Slide from "@/components/Slide";
 
 //Import Images
 import carouselA from "@/public/images/carouselA.png";
@@ -16,7 +14,7 @@ import carouselC from "@/public/images/carouselC.png";
 import carouselD from "@/public/images/carouselD.png";
 
 
-function RightImages() {
+
   //slide images
   const slides = [
     {
@@ -37,59 +35,27 @@ function RightImages() {
     },
   ];
 
-  //Slide Carousel State
-  const [currentSlide, setCurrentSlide] = useState(0);
+  interface RightImagesProps{
+    className?: string;
+  }
 
-  //Right-Left Change Slides Func.
-  // const prevSlide = () => {
-  //   const isFirstSlide = currentSlide === 0;
-  //   const newSlide = isFirstSlide ? slides.length - 1 : currentSlide - 1;
-  //   setCurrentSlide(newSlide);
-  // };
 
-  // const nextSlide = () => {
-  //   const isLastSlide = currentSlide === slides.length - 1;
-  //   const newSlide = isLastSlide ? 0 : currentSlide + 1;
-  //   setCurrentSlide(newSlide);
-  // };
+  function RightImages( props: RightImagesProps ) {
 
-  const goToSlide = (slideIndex: any) => {
-    setCurrentSlide(slideIndex);
-  };
+    const { className } = props;
 
-  //AutoSlide Interval Time
-  const autoSlideInterval = 3000;
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    //Set Interval
-    const autoSlideTimer = setInterval(() => {
-      //Define slide
-      const isLastSlide = currentSlide === slides.length - 1;
-      const newSlide = isLastSlide ? 0 : currentSlide + 1;
-      setCurrentSlide(newSlide);
-    }, autoSlideInterval);
-    return () => clearInterval(autoSlideTimer);
-  }, [currentSlide]);
 
   return (
-    <div className="flex relative">
-      <div>
-        <Image
+    <div className={className}>
+        <Card
           src={slides[currentSlide].src}
           alt="first-carousel-image"
+          width={550}
+          height={982}
         />
-      </div>
-      <div className="flex absolute top-[90%] left-[40%] cursor-pointer">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="px-2 justify-center text-gray-300 transition duration-150 ease-in-out"
-          >
-            <FaSquare size={10} />
-          </div>
-        ))}
-      </div>
+        <Slide slides={slides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
     </div>
   );
 }

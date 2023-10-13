@@ -21,27 +21,36 @@ import instP from "@/public/images/instagram-images/instP.jpeg";
 import instQ from "@/public/images/instagram-images/instQ.jpeg";
 import instR from "@/public/images/instagram-images/instR.jpeg";
 
-function InstaSection() {
-  const instaImages = [
-    instA,
-    instB,
-    instC,
-    instD,
-    instE,
-    instF,
-    instG,
-    instH,
-    instI,
-    instJ,
-    instK,
-    instL,
-    instM,
-    instN,
-    instO,
-    instP,
-    instQ,
-    instR,
-  ];
+
+const instaImages = [
+  instA,
+  instB,
+  instC,
+  instD,
+  instE,
+  instF,
+  instG,
+  instH,
+  instI,
+  instJ,
+  instK,
+  instL,
+  instM,
+  instN,
+  instO,
+  instP,
+  instQ,
+  instR,
+];
+
+interface AboutSectionProps{
+  className?: string;
+}
+
+
+function InstaSection(props: AboutSectionProps) {
+ 
+  const { className } = props;
 
   return (
     <div className="w-screen flex justify-center">

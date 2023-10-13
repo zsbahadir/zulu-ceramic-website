@@ -1,28 +1,24 @@
-//Import Next
-import Link from "next/link";
 
 //Import Logo's Image
-import LogoImage from "./LogoImage";
+import trademark from "@/public/images/trademark.png";
+import Card from "./Card";
 
-//w-870 left-62
 
 interface HeaderLineProps {
-  lineWidth: number;
-  className?: string | undefined;
-}
+  width: number;
+  left: number
+  }
 
-function HeaderLine(props: HeaderLineProps) {
-  const { lineWidth, className } = props;
+function HeaderLine( props: HeaderLineProps ) {
+  const { width, left } = props;
 
   return (
-    <div className="">
-      {/* logo */}
-      <Link href="https://www.instagram.com/zuluceramics" target="_blank" >
-      <LogoImage logoWidth={7} logoHeight={7} />
-      </Link>
-      {/* Line */}
+    <div>
+      <Card src={trademark} alt="Zulu's trademark" width={80} height={80} href="https://www.instagram.com/zuluceramics"/>
       <div
-        className={`w-[1378px] left-[62px] absolute border border-pink opacity-60`}
+        className={`w-[1378px] left-[${left}px] absolute border border-pink opacity-60`}
+
+        // when w-[${width}px] is written, couldn't get width property on the page.
       ></div>
     </div>
   );
