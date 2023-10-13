@@ -6,7 +6,7 @@ import React from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay} from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -30,7 +30,7 @@ function AutoSlider( props: AutoSliderProps ) {
   return (
     <>
       <Swiper
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay]}
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
         autoplay={{
