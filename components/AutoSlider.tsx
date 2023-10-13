@@ -1,8 +1,8 @@
 "use client";
 
 //Import Next
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,13 +23,14 @@ interface AutoSliderProps {
   clickable?: boolean | undefined;
 }
 
-function AutoSlider(props: AutoSliderProps) {
-  const { images, spaceBetween, slidesPerView, width, height, clickable } =
-    props;
+function AutoSlider( props: AutoSliderProps ) {
+
+  const { images, spaceBetween, slidesPerView, width, height, clickable } = props;
 
   return (
     <>
       <Swiper
+        modules={[Autoplay, Navigation]}
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
         autoplay={{
