@@ -1,22 +1,26 @@
 //Import Fonts
-// import 'styles/fonts.css';
-import '../../../../styles/font.css'
+import '@/styles/font.css'
 
+//import Components
+import Text from "@/components/Text";
+
+
+const firstLine = "Unique, Handmade, Shiny";
+const secondLine = "products produced with";
+const firstSpan = "ceramic";
+const secondSpan = "care";
 
 function HomePageText() {
   return (
-    <div className="flex col-span-2 relative justify-center mt-10">
-      <div className="justify-center">
-        <p className="text-black-500 text-[40px] font-light text-center mb-6">
-          Unique, Handmade, Shiny{" "}
-        </p>
-        <p className="text-black-500 text-[40px] font-light text-center mb-6">
-          <span className="text-black-500 text-[40px] font-medium italic" style={{fontFamily: 'EmotionalRescue'}}>
-            ceramic{" "}
-          </span>
-          products produced with
-          <span className="text-black-500 text-[40px] font-medium italic" style={{fontFamily: 'EmotionalRescue'}}> care</span>
-        </p>
+    <div className='mt-32'>
+      {/* light olmadi bur turlu  el yazilari ile ayni hizaya gelmiyor.*/}
+    
+      <Text text={firstLine} className='text-center font-light text-4xl mb-8'/>   
+
+      <div className='flex justify-center'>
+      <Text text={firstSpan}  size='4xl' italic handWriting marginTop={1}/>     
+      <Text text={secondLine} size='4xl' weight='light' marginX={6}/>    
+      <Text text={secondSpan} size='4xl' italic handWriting marginTop={1}/>    
       </div>
     </div>
   );

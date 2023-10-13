@@ -4,11 +4,10 @@ import InstaSection from "./partials/instaSection";
 
 function AboutPage() {
   return (
-    <div className="relative mb-28">
-      <AboutSection />
-      {/* Instagram Photos */}
-      <div className="mt-16 grid place-items-center">
-        <InstaSection />
+    <div>
+      <AboutSection/>
+      <div className="my-24">
+      <InstaSection/>
       </div>
     </div>
   );

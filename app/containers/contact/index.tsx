@@ -1,27 +1,22 @@
-//Import Next
-import Image from "next/image";
-
 //Import images
 import ContactUsBackground from "@/public/images/contactBackground.jpg";
 import ContactUsImage from "@/public/images/contactUsImage.jpg";
 //Import Partials
-import ContactUs from "./partials/ContactUs";
+import ContactPageForm from "./partials/ContactPageForm";
+import Card from "@/components/Card";
+import ContactPageLayout from "./partials/ContactPageLayout";
+import Footer from "@/components/Footer";
 
 function ContactUsSection() {
   return (
-    <div className="flex relative justify-center items-center mt-20">
-      <Image
-        src={ContactUsBackground}
-        alt={"Contact Us Background Image"}
-        width={1100}
-        className="rounded"
-      />
-      <div className=" flex absolute">
-        <div className="flex w-[280px] border rounded-l">
-       <ContactUs/>
-        </div>
-        <Image src={ContactUsImage} alt={"Contact Us Image"} className="rounded-r"/>
-      </div>
+    <div>
+        <ContactPageLayout bgImage={ContactUsBackground} bgWidth={1100}>
+
+        <ContactPageForm />
+        <Card src={ContactUsImage} alt={"ContactUsImage"} width={291} height={501}/>
+        
+        </ContactPageLayout>
+        <Footer/>
     </div>
   );
 }

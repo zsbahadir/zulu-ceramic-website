@@ -3,7 +3,7 @@
 //Import React
 import { useEffect, useState } from 'react';
 
-import { FaArrowAltCircleUp, FaRegArrowAltCircleUp } from "react-icons/fa"
+import { FaArrowAltCircleUp } from "react-icons/fa"
 
 const ScrollToTopButton = () => {
 
@@ -26,7 +26,6 @@ const ScrollToTopButton = () => {
 
   return (
     // Display button when isVisible is true
-
        <button className="fixed bottom-10 right-10 p-2 rounded-full bg-pink text-white" onClick={scrollToTop}
        style={{ display: isVisible ? 'block' : 'none' }}>
        <FaArrowAltCircleUp/>

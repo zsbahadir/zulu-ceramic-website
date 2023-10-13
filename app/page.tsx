@@ -2,7 +2,7 @@
 import AboutPage from "@/app/containers/about/page";
 import Collections from "@/app/containers/collections";
 import ContactPage from "@/app/containers/contact";
-import HomePage from "@/app/containers/welcome";
+import HomePage from "@/app/containers/welcome/page";
 
 
 //Import Components
@@ -11,7 +11,7 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 
 function Zulu() {
   return (
-    <div className="">
+    <div>
       <div id = "home">
       <HomePage />
       </div>

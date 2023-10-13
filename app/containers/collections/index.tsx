@@ -1,5 +1,3 @@
-//Import Next
-import Image from "next/image";
 
 //Import images
 import large_img from "@/public/images/gallery-images/large_img.jpg";
@@ -28,167 +26,142 @@ import bottomA from "@/public/images/gallery-images/bottomA.jpg";
 import bottomB from "@/public/images/gallery-images/bottomB.jpg";
 import bottomC from "@/public/images/gallery-images/bottomC.jpg";
 
+
+import Card from "@/components/Card";
+
+
+import GridOne from "./partials/gridOne";
+import GridTwo from "./partials/gridTwo";
+import GridBase from "./partials/gridBase";
+import GridThree from "./partials/gridThree";
+import GridFour from "./partials/gridFour";
+import ImagesMapping from "@/components/ImagesMapping";
+
+
+
+const squareImages = [
+  {
+    src: squareA,
+    alt: "squareA_Img",
+  },
+  {
+    src: squareB,
+    alt: "squareB_Img",
+  },
+  {
+    src: squareC,
+    alt: "squareC_Img",
+  },
+  {
+    src: squareD,
+    alt: "squareD_Img",
+  },
+  {
+    src: squareE,
+    alt: "squareE_Img",
+  },
+  {
+    src: squareF,
+    alt: "squareF_Img",
+  },
+  {
+    src: squareG,
+    alt: "squareG_Img",
+  },
+  {
+    src: squareH,
+    alt: "squareH_Img",
+  },
+  {
+    src: squareI,
+    alt: "squareI_Img",
+  },
+  {
+    src: squareJ,
+    alt: "squareJ_Img",
+  },
+  {
+    src: squareK,
+    alt: "squareK_Img",
+  },
+  {
+    src: squareL,
+    alt: "squareL_Img",
+  },
+  {
+    src: squareM,
+    alt: "squareM_Img",
+  },
+  {
+    src: squareN,
+    alt: "squareN_Img",
+  },
+  {
+    src: squareO,
+    alt: "squareO_Img",
+  },
+  {
+    src: squareP,
+    alt: "squareP_Img",
+  },
+];
+
+const rightImages = [
+  {
+    src: rightA,
+    alt: "RightA_Img",
+  },
+  {
+    src: rightB,
+    alt: "RightB_Img",
+  },
+  {
+    src: rightC,
+    alt: "RightC_Img",
+  },
+];
+
+const bottomImages = [
+  {
+    src: bottomA,
+    alt: "BottomA_Img",
+  },
+  {
+    src: bottomB,
+    alt: "BottomB_Img",
+  },
+  {
+    src: bottomC,
+    alt: "BottomC_Img",
+  },
+];
+
+
+
 function Collections() {
-  const squareImages = [
-    {
-      src: squareA,
-      alt: "squareA_Img",
-    },
-    {
-      src: squareB,
-      alt: "squareB_Img",
-    },
-    {
-      src: squareC,
-      alt: "squareC_Img",
-    },
-    {
-      src: squareD,
-      alt: "squareD_Img",
-    },
-    {
-      src: squareE,
-      alt: "squareE_Img",
-    },
-    {
-      src: squareF,
-      alt: "squareF_Img",
-    },
-    {
-      src: squareG,
-      alt: "squareG_Img",
-    },
-    {
-      src: squareH,
-      alt: "squareH_Img",
-    },
-    {
-      src: squareI,
-      alt: "squareI_Img",
-    },
-    {
-      src: squareJ,
-      alt: "squareJ_Img",
-    },
-    {
-      src: squareK,
-      alt: "squareK_Img",
-    },
-    {
-      src: squareL,
-      alt: "squareL_Img",
-    },
-    {
-      src: squareM,
-      alt: "squareM_Img",
-    },
-    {
-      src: squareN,
-      alt: "squareN_Img",
-    },
-    {
-      src: squareO,
-      alt: "squareO_Img",
-    },
-    {
-      src: squareP,
-      alt: "squareP_Img",
-    },
-  ];
+  
 
-  const rightImages = [
-    {
-      src: rightA,
-      alt: "RightA_Img",
-    },
-    {
-      src: rightB,
-      alt: "RightB_Img",
-    },
-    {
-      src: rightC,
-      alt: "RightC_Img",
-    },
-  ];
-
-  const bottomImages = [
-    {
-      src: bottomA,
-      alt: "BottomA_Img",
-    },
-    {
-      src: bottomB,
-      alt: "BottomB_Img",
-    },
-    {
-      src: bottomC,
-      alt: "BottomC_Img",
-    },
-  ];
 
   return (
-    <div className="grid grid-cols-5 gap-4">
-      <div className="col-start-1 col-span-5 w-auto mb-12 ml-4 opacity-90 hover:opacity-100">
-        <Image src={large_img} alt="large-image" className="rounded" />
-      </div>
+   <GridBase>
+
+          <GridOne><Card src={large_img} alt="large-image" width={1446} height={373} /></GridOne>
 
       {/* left squre images area */}
-      <div className="col-start-1 col-end-5 w-auto relative opacity-90 ml-20">
-        <div className="grid grid-cols-4 gap-8">
-          {squareImages?.map((image) => {
-            return (
-              <div className="hover:scale-125">
-                <Image
-                  src={image?.src}
-                  alt={image?.alt}
-                  className="rounded"
-                  width={150.32}
-                  height={150}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+          <GridTwo>
+            <ImagesMapping images={squareImages} width={150} height={150} className={"hover:scale-125"}/>
+          </GridTwo>
 
       {/* right images area */}
-      <div className="col-end-7 col-span-2 w-auto h-auto relative opacity-90">
-        <div className="grid grid-cols-1 gap-12">
-          {rightImages?.map((image) => {
-            return (
-              <div className="hover:scale-125">
-                <Image
-                  src={image?.src}
-                  alt={image?.alt}
-                  className="rounded"
-                  width={160}
-                  height={200}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+          <GridThree> 
+            <ImagesMapping images={rightImages} width={160} height={200} className={"hover:scale-125"}/>
+          </GridThree>
 
       {/* bottom images area */}
-      <div className="col-start-2 col-span-3 w-auto relative opacity-90">
-        <div className="grid grid-cols-3 gap-8 mt-8">
-          {bottomImages?.map((image) => {
-            return (
-              <div className="hover:scale-125">
-                <Image
-                  src={image?.src}
-                  alt={image?.alt}
-                  className="rounded"
-                  width={200}
-                  height={150}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
+          <GridFour>
+            <ImagesMapping images={bottomImages} width={200} height={150} className={"hover:scale-125"}/>
+          </GridFour>
+      </GridBase>
   );
 }
 
