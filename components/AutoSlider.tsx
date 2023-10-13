@@ -2,15 +2,32 @@
 
 //Import Next
 import Image from "next/image";
+import React from "react";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide,  } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
+
+
+type SwiperProps = React.HTMLAttributes<HTMLDivElement> & {
+  modules?: Array<SwiperModule> | Array<any>; // modules özelliğini ekledik
+  spaceBetween?: number;
+  slidesPerView?: number;
+  autoplay?: boolean | { delay: number; disableOnInteraction?: boolean };
+  navigation?: boolean;
+  pagination?: { clickable?: boolean };
+  width?: number;
+  height?: number;
+};
+
+interface SwiperModule {
+  // Import Swiper modules here
+}
 
 interface AutoSliderProps {
   images: any;
@@ -22,9 +39,9 @@ interface AutoSliderProps {
   clickable?: boolean | undefined;
 }
 
-function AutoSlider(props: AutoSliderProps) {
-  const { images, spaceBetween, slidesPerView, width, height, clickable } =
-    props;
+function AutoSlider( props: AutoSliderProps ) {
+
+  const { images, spaceBetween, slidesPerView, width, height, clickable } = props;
 
   return (
     <>
