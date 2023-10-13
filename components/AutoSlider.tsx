@@ -16,7 +16,7 @@ import "swiper/css/effect-coverflow";
 
 
 type SwiperProps = React.HTMLAttributes<HTMLDivElement> & {
-  modules?: SwiperModule[]; // modules özelliğini ekledik
+  modules?: SwiperModule[] | any[]; // modules özelliğini ekledik
   spaceBetween?: number;
   slidesPerView?: number;
   autoplay?: boolean | { delay: number; disableOnInteraction?: boolean };
