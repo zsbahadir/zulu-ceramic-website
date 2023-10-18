@@ -12,7 +12,7 @@ import localFont from 'next/font/local'
 // })
 
 //Import Components
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 
 

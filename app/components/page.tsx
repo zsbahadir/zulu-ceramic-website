@@ -1,10 +1,10 @@
-import AutoSlider from "@/components/AutoSlider";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import Button from "@/components/Button";
-import Header from "@/components/Header";
-import HeaderLine from "@/components/HeaderLine";
-import Card from "@/components/Card";
-import LogoImage from "@/components/LogoImage";
+import AutoSlider from "@/components/slider/AutoSlider";
+import Breadcrumbs from "@/components/navigation/Breadcrumbs";
+import Button from "@/components/cta/Button";
+import Header from "@/components/layout/Header";
+import HeaderLine from "@/components/layout/HeaderLine";
+import Card from "@/components/card/Card";
+import LogoImage from "@/components/card/LogoImage";
 
 
 
@@ -16,18 +16,18 @@ import orangeMini from '@/public/images/shopping/CupsMini/orangeMini.jpg'
 import pinkMini from '@/public/images/shopping/CupsMini/pinkMini.jpg'
 
 import Container from "./Container";
-import Input from "@/components/Input";
-import ScrollToTopButton from "@/components/ScrollToTop";
+import Input from "@/components/input/Input";
+import ScrollToTopButton from "@/components/navigation/ScrollToTop";
 import ShopHeaderLine from "@/components/ShopHeaderLine";
-import TextArea from "@/components/TextArea";
-import Text from "@/components/Text";
-import Navbar from "@/components/Navbar";
+import TextArea from "@/components/input/TextArea";
+import Text from "@/components/text/Text";
+import Navbar from "@/components/navigation/Navbar";
+import BottomFooterText from "@/components/text/BottomFooterText";
+import AuthNameText from "@/components/auth/AuthNameText";
 
 //Import Fonts
 import '@/styles/font.css'
-import FormLayout from "@/components/FormLayout";
-import ContactPageLayout from "../containers/contact/partials/ContactPageLayout";
-import BottomFooterText from "@/components/BottomFooterText";
+import FormLayout from "@/components/form/FormLayout";
 
 const breadcrumbsItems = [
     { label: 'Anasayfa', href: '/' },
@@ -42,7 +42,9 @@ const breadcrumbsItems = [
     { title: "Logo Image image", component: <LogoImage logoWidth={10} logoHeight={10} /> },
     { title: "Header Line", component: <HeaderLine width={1378} left={62} /> },
     { title: "Navbar", component: <Navbar/> },
-    { title: "Header", component: <Header/> }, 
+    { title: "Header Home Page", component: <Header homePage/> }, 
+    { title: "Header Shopping Page", component: <Header homePage={false}/> }, 
+    { title: "Auth Name ", component: <AuthNameText name={"Zeynep"} className={""} /> }, 
     { title: "Basic Image Container", component: <Card src={blueMini} alt={"blueMini"} width={100} height={100} /> },
     { title: "image container with label", component: <Card src={blueMini} alt={"blueMini"} width={200} height={200} label="Mini Cups"/> },
     { title: "with name and price", component: <Card src={blueMini} alt={"blueMini"} width={200} height={200} name="Blue" price={24}/> },

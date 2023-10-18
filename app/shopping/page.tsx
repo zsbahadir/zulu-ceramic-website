@@ -1,15 +1,10 @@
-//import Next
-import Image from "next/image";
 
-//import Partials
-import ShoppingHeader from "@/components/ShoppingHeader";
-
-import ProductSection from "@/components/ProductSection";
-import ShoppingHomePage from "./partials/shoppingHomePage";
-import ProductChoosingSection from "@/components/ProductChoosingSection";
+//import partials
+import Section from "@/app/shopping/partials/section";
 
 //Import Components
-import ScrollToTopButton from "@/components/ScrollToTop";
+import ScrollToTopButton from "@/components/navigation/ScrollToTop";
+import Header from "@/components/layout/Header";
 
 //Import Shopping Images
 import cupsShopping from '@/public/images/shopping/cupsShopping.jpg';
@@ -193,14 +188,14 @@ function Shopping() {
     return (
       <div className="mt-4">
 
-        <ShoppingHeader name={"Zeynep"}/>
-
-            <div className="flex justify-center items-center my-40">
-            <ShoppingHomePage images={images}/>
+           <Header homePage={false} hasLine/>
+            <div className="flex justify-center items-center my-24">
+            <Section title={""} images={images?.slice(0,3)} cols={3} gap={4} text_size={"lg"} id={""} hasLine={false} />
             </div>
-            <ProductSection title={"Cups"} images={cupsImages} cols={2} gap={3} text_size={"lg"} id={'cups'}/>
-            <ProductSection title={"Espresso Cups"} images={miniCups} cols={3} gap={4} text_size={"sm"} id={""}/>
-            <ProductSection title={"Filter Coffee / Latte Cups"} images={midiCupImages} cols={3} gap={4} text_size={"sm"} id={""}/>
+
+            <Section title={"Cups"} images={cupsImages} cols={2} gap={3} text_size={"md"} id={'cups'} hasLine/>
+            <Section title={"Espresso Cups"} images={miniCups} cols={3} gap={4} text_size={"sm"} id={""} target="_blank" hasLine/>
+            <Section title={"Filter Coffee / Latte Cups"} images={midiCupImages} cols={3} gap={4} text_size={"sm"} id={""} hasLine/>
             <ScrollToTopButton/>
 
 

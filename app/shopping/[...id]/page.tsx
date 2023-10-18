@@ -6,7 +6,7 @@ import { GetServerSideProps } from 'next';
 
 //Import Logo's Image
 import trademark from "@/public/images/trademark.png";
-import ProductContainer from "@/components/ProductContainer";
+import ProductContainer from "@/app/shopping/[...id]/partials/ProductContainer";
 
 //Import Mini Cup images
 import blueMini from '@/public/images/shopping/CupsMini/blueMini.jpg'
@@ -25,8 +25,8 @@ import greenMidi from '@/public/images/shopping/CupsMidi/greenMidi.jpg'
 import orangeMidi from '@/public/images/shopping/CupsMidi/orangeMidi.jpg'
 import pinkMidi from '@/public/images/shopping/CupsMidi/pinkMidi.jpg'
 import turquazMidi from '@/public/images/shopping/CupsMidi/turquazMidi.jpg'
-import ShoppingHeader from "@/components/ShoppingHeader";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import Breadcrumbs from "@/components/navigation/Breadcrumbs";
+import Header from "@/components/layout/Header";
 
 
 
@@ -175,7 +175,7 @@ interface ProductPageProps {
 
     return  (
     <div>
-    <ShoppingHeader name={"Zeynep"}/>
+    <Header homePage={false} hasLine={false}/>
     <Breadcrumbs items={breadcrumbItems}/>
     <ProductContainer images={productImages.slice(0, 8)} selectedImage={selectedImage} />
     </div>
