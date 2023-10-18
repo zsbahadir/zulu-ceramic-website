@@ -40,7 +40,7 @@ function Header(props: HeaderProps) {
       }
      
       <Navbar className="absolute mt-12 mx-20 flex justify-between w-1/2" {...props}/>
-      <HeaderLine width={1378} left={62} hasLine={hasLine} hasLabel={false} title={""}/>      
+      <HeaderLine hasLine={hasLine} hasLabel={false} title={""}/>      
 
     </div>
   );

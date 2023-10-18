@@ -5,15 +5,13 @@ import Card from "../card/Card";
 
 
 interface HeaderLineProps {
-  width: number;
-  left: number;
   hasLine?: boolean; 
   hasLabel?: boolean;
   title?: string;
   }
 
 function HeaderLine( props: HeaderLineProps ) {
-  const { width, left, hasLine, hasLabel, title } = props;
+  const { hasLine, hasLabel, title } = props;
 
 
 
@@ -26,7 +24,7 @@ function HeaderLine( props: HeaderLineProps ) {
       )}
       {hasLine && 
       <div
-        className={`w-[1300px] left-[${left}px] absolute border border-pink opacity-60`}
+        className={`w-[1300px] left-[62px] absolute border border-pink opacity-60`}
 
         // when w-[${width}px] is written, couldn't get width property on the page.
       ></div>

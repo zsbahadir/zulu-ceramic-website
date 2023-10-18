@@ -17,7 +17,7 @@ function Footer() {
         <Navbar homePage isFooter icon={<FaInstagram className="w-6 h-6"/>} className="absolute flex mt-12"/>
         </div>
         
-      <HeaderLine width={900} left={62} hasLine hasLabel={false} title={""}  /> 
+      <HeaderLine hasLine hasLabel={false} title={""}  /> 
 
         <BottomFooterText 
         leftContent={<Text text = "© 2023, Zulu Ceramic Powered by Zebi"/>} 
