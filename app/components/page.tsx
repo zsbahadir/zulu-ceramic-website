@@ -18,7 +18,6 @@ import pinkMini from '@/public/images/shopping/CupsMini/pinkMini.jpg'
 import Container from "./Container";
 import Input from "@/components/input/Input";
 import ScrollToTopButton from "@/components/navigation/ScrollToTop";
-import ShopHeaderLine from "@/components/ShopHeaderLine";
 import TextArea from "@/components/input/TextArea";
 import Text from "@/components/text/Text";
 import Navbar from "@/components/navigation/Navbar";
@@ -40,10 +39,10 @@ const breadcrumbsItems = [
 
   const sections = [
     { title: "Logo Image image", component: <LogoImage logoWidth={10} logoHeight={10} /> },
-    { title: "Header Line", component: <HeaderLine width={1378} left={62} /> },
+    { title: "Header Line", component: <HeaderLine width={1378} left={62} hasLabel={false} title={""} /> },
     { title: "Navbar", component: <Navbar/> },
-    { title: "Header Home Page", component: <Header homePage/> }, 
-    { title: "Header Shopping Page", component: <Header homePage={false}/> }, 
+    { title: "Header Home Page", component: <Header homePage hasLine/> }, 
+    { title: "Header Shopping Page", component: <Header homePage={false} hasLine/> }, 
     { title: "Auth Name ", component: <AuthNameText name={"Zeynep"} className={""} /> }, 
     { title: "Basic Image Container", component: <Card src={blueMini} alt={"blueMini"} width={100} height={100} /> },
     { title: "image container with label", component: <Card src={blueMini} alt={"blueMini"} width={200} height={200} label="Mini Cups"/> },
@@ -53,7 +52,6 @@ const breadcrumbsItems = [
     { title: "AutoSlider", component: <AutoSlider images={images} slidesPerView={3}/> },
     { title: "Input", component: <Input text_size={"sm"}/> },
     { title: "Text Area", component: <TextArea width={40} text_size={"sm"}/> },
-    { title: "shop header line", component: <ShopHeaderLine title={"Cups"}/> },
     { title: "Text-1", component: <Text size='xs' weight="bold" text={"Text Component-1"}></Text> },
     { title: "Text-2", component: <Text size='sm' text={"Text Component-2"}/> },
     { title: "Text-3", component: <Text size='md' weight="light" text={"Text Component-3"}/> },

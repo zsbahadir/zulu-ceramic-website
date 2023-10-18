@@ -8,8 +8,8 @@ interface HeaderLineProps {
   width: number;
   left: number;
   hasLine?: boolean; 
-  hasLabel: boolean;
-  title: string;
+  hasLabel?: boolean;
+  title?: string;
   }
 
 function HeaderLine( props: HeaderLineProps ) {
