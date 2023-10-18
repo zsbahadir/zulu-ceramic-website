@@ -39,7 +39,7 @@ const breadcrumbsItems = [
 
   const sections = [
     { title: "Logo Image image", component: <LogoImage logoWidth={10} logoHeight={10} /> },
-    { title: "Header Line", component: <HeaderLine width={1378} left={62} hasLabel={false} title={""} /> },
+    { title: "Header Line", component: <HeaderLine hasLabel={false} title={""} /> },
     { title: "Navbar", component: <Navbar/> },
     { title: "Header Home Page", component: <Header homePage hasLine/> }, 
     { title: "Header Shopping Page", component: <Header homePage={false} hasLine/> }, 

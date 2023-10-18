@@ -27,7 +27,7 @@ function Section(props: SectionProps){
 
     return(
         <div>
-            <HeaderLine width={100} left={62} hasLabel title={title} hasLine={hasLine}/>
+            <HeaderLine hasLabel title={title} hasLine={hasLine}/>
 
             <div className="flex justify-center">
             <div className={`grid grid-cols-${cols} gap-${gap} w-3/4 m-20 place-items-center`}>
