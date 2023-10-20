@@ -26,7 +26,7 @@ The following technologies were used in this project:
    yarn install
 
 ## Responsive Design
-The current version of the site is optimized for screens with a width of 1440px or larger (@media (min-width: 1440px)). 
+The current version of the site is optimized for screens with a width of 1440px (@media (min-width: 1440px)). 
 Responsive improvements are actively being developed to ensure a seamless experience across various devices.
 
 ## Deploy on Vercel
