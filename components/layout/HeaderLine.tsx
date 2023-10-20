@@ -24,9 +24,7 @@ function HeaderLine( props: HeaderLineProps ) {
       )}
       {hasLine && 
       <div
-        className={`w-[1300px] left-[62px] absolute border border-pink opacity-60`}
-
-        // when w-[${width}px] is written, couldn't get width property on the page.
+        className={`w-screen left-16 absolute border border-pink opacity-60`}
       ></div>
     }
     </div>

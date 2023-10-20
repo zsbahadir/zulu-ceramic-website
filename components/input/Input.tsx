@@ -17,7 +17,7 @@ function Input( props: InputProps ){
             {label && <label>{label}</label>}
             <input
             {...rest} 
-            className={`border rounded px-2 py-2 focus:outline-none focus:border-gray-300 text-${ text_size } w-${width}`}
+            className={`border rounded px-2 py-2  focus:outline-none focus:border-gray-300 text-${ text_size } w-${width}`}
             />
         </div>
     )
@@ -27,4 +27,3 @@ export default Input;
 
 
 
-//w-[220.72px] h-[41.31px]

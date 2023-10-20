@@ -22,7 +22,7 @@ body {
   }
 }
 
-.flexCenter {
+/* .flexCenter {
   @apply flex justify-center items-center;
 }
 
@@ -36,13 +36,13 @@ body {
 
 .text-small {
   @apply text-sm font-medium;
-}
+} */
 
 /* .paddings {
   @apply lg:px-20 py-6 px-5;
 } */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
   height: 4px;
 }
@@ -50,8 +50,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 12px;
-}
+} */
 
-.no-result-text {
+/* .no-result-text {
   @apply w-full text-center my-10 px-2;
-}
+} */
