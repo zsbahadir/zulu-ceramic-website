@@ -5,6 +5,7 @@ This project is a custom-designed website for a company that sells handcrafted c
 ## Project Summary
 
 This website allows customers to explore and purchase handcrafted ceramic products. Key features include a product catalog, add to cart functionality, payment processing, and user account management.
+Active developments and improvements are being made in the project.
 
 ## Technologies Used
 
