@@ -8,43 +8,26 @@ module.exports = {
   // content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      'sm': '640px', //425
+          // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+          // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+      'xl': '1140px', //1280  //benim bilgisayarim mac
+          // => @media (min-width: 1280px) { ... }
+
+      '2xl': '2560px', //1536
+          // => @media (min-width: 1536px) { ... }
     },
-    // screens: {
-    //   'tablet': '640px',
-    //   // => @media (min-width: 640px) { ... }
-
-    //   'laptop': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
-
-    //   'desktop': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // },
-
-    //     screens: {
-    //       'sm': '640px',
-    //       // => @media (min-width: 640px) { ... }
-
-    //       'md': '768px',
-    //       // => @media (min-width: 768px) { ... }
-
-    //       'lg': '1024px',
-    //       // => @media (min-width: 1024px) { ... }
-
-    //       'xl': '1280px',
-    //       // => @media (min-width: 1280px) { ... }
-
-    //       '2xl': '1536px',
-    //       // => @media (min-width: 1536px) { ... }
-    //     }
-    //   }
-    // }
+  
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        handwriting: ["EmotionalRescue", "serif" ]
       },
       colors: {
         "nav-border": "#C6285D",

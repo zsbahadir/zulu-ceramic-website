@@ -23,8 +23,8 @@ function FormLayout( props: FormLayoutProps ){
 
     
     return(
-        <div className="flex w-[280px]">
-            <div className=" w-full bg-neutral-200 shadow-inner backdrop-blur-[15.40px] grid place-items-center">
+        <div className="flex w-72">
+            <div className=" w-full bg-neutral-200 shadow-inner grid place-items-center">
 
                 <div className="m-2 text-center w-full h-full inline-grid place-content-center flex-col space-y-6">
 
