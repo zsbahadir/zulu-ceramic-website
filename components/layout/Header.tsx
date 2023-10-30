@@ -11,7 +11,7 @@ import Modal from '../modal/Modal'
 interface HeaderProps {
   homePage: boolean
   hasLine?: boolean
-  hasAuth: boolean
+  hasAuth?: boolean
 }
 
 function Header (props: HeaderProps) {
