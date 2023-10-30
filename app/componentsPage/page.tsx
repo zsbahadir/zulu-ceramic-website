@@ -27,10 +27,10 @@ import '@/styles/font.css'
 import FormLayout from '@/components/form/FormLayout'
 
 const breadcrumbsItems = [
-  { label: 'Anasayfa', href: '/' },
-  { label: 'Kategoriler', href: '/categories' },
-  { label: 'Ürünler', href: '/categories/products' },
-  { label: 'Ürün Detayı', href: '/categories/products/product-detail' }
+  { label: 'Welcome', href: '/' },
+  { label: 'Categories', href: '/categories' },
+  { label: 'Products', href: '/categories/products' },
+  { label: 'Product Detail', href: '/categories/products/product-detail' }
 ]
 
 const images = [

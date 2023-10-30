@@ -5,7 +5,9 @@ import {
   createContext,
   useState,
   useEffect,
-  ReactNode
+  ReactNode,
+  SetStateAction,
+  Dispatch
 } from 'react'
 import {
   signInWithPopup,
@@ -22,18 +24,14 @@ interface AuthContextProps {
 
 interface AuthContextType {
   user: User | null // Assuming User is the type from 'firebase/auth'
+  setUser: Dispatch<SetStateAction<User | null>>
   googleSignIn: () => void
   logOut: () => void
 }
 
-// export const AuthContext = createContext()
 export const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-// export const UserAuth = () => useContext(AuthContext)
-
-export function UserAuth () {
-  return useContext(AuthContext)
-}
+export const UserAuth = () => useContext(AuthContext)
 
 export const AuthContextProvider = (props: AuthContextProps) => {
   const { children } = props
@@ -59,7 +57,7 @@ export const AuthContextProvider = (props: AuthContextProps) => {
   }, [user])
 
   return (
-    <AuthContext.Provider value={{ user, googleSignIn, logOut }}>
+    <AuthContext.Provider value={{ user, setUser, googleSignIn, logOut }}>
       {children}
     </AuthContext.Provider>
   )
