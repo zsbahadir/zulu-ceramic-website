@@ -52,10 +52,13 @@ const sections = [
     component: <HeaderLine hasLabel={false} title={''} />
   },
   { title: 'Navbar', component: <Navbar /> },
-  { title: 'Header Home Page', component: <Header homePage hasLine /> },
+  {
+    title: 'Header Home Page',
+    component: <Header homePage hasLine hasAuth={false} />
+  },
   {
     title: 'Header Shopping Page',
-    component: <Header homePage={false} hasLine />
+    component: <Header homePage={false} hasLine hasAuth={false} />
   },
   {
     title: 'Auth Name ',
@@ -106,7 +109,7 @@ const sections = [
     title: 'AutoSlider',
     component: <AutoSlider images={images} slidesPerView={3} />
   },
-  { title: 'Input', component: <Input text_size={'sm'} /> },
+  { title: 'Input', component: <Input inputSize={'sm'} /> },
   { title: 'Text Area', component: <TextArea width={40} text_size={'sm'} /> },
   {
     title: 'Text-1',
@@ -125,8 +128,8 @@ const sections = [
     title: 'Form Layout',
     component: (
       <FormLayout buttonWidth={20} buttonHeight={20} buttonLabel={'button'}>
-        <Input text_size={''} />
-        <Input text_size={''} />
+        <Input inputSize={''} />
+        <Input inputSize={''} />
       </FormLayout>
     )
   },
