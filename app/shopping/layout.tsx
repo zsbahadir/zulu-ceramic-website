@@ -1,5 +1,5 @@
 //'use client'
-import { AuthContextProvider } from '@/app/context/AuthContext'
+import AuthContextProvider from '@/app/context/AuthContext'
 
 //Import Components
 import Footer from '@/components/layout/Footer'

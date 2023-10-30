@@ -29,7 +29,11 @@ interface AuthContextType {
 // export const AuthContext = createContext()
 export const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-export const UserAuth = () => useContext(AuthContext)
+// export const UserAuth = () => useContext(AuthContext)
+
+export function UserAuth () {
+  return useContext(AuthContext)
+}
 
 export const AuthContextProvider = (props: AuthContextProps) => {
   const { children } = props
