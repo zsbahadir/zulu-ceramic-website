@@ -5,9 +5,7 @@ import {
   createContext,
   useState,
   useEffect,
-  ReactNode,
-  SetStateAction,
-  Dispatch
+  ReactNode
 } from 'react'
 import {
   signInWithPopup,
@@ -20,13 +18,15 @@ import { auth } from '@/app/firebase/firebase.config'
 
 interface AuthContextProps {
   children: ReactNode
+  user: User | null // Assuming User is the type from 'firebase/auth'
+  googleSignIn: () => void
+  logOut: () => void
 }
 
 interface AuthContextType {
-  user: User | null // Assuming User is the type from 'firebase/auth'
-  setUser: Dispatch<SetStateAction<User | null>>
-  googleSignIn: () => void
-  logOut: () => void
+  // user: User | null // Assuming User is the type from 'firebase/auth'
+  // googleSignIn: () => void
+  // logOut: () => void
 }
 
 export const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -37,8 +37,6 @@ export const AuthContextProvider = (props: AuthContextProps) => {
   const { children } = props
 
   const [user, setUser] = useState<User | null>(null)
-
-  console.log('context sayfasindaki', user)
 
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider()
@@ -57,7 +55,7 @@ export const AuthContextProvider = (props: AuthContextProps) => {
   }, [user])
 
   return (
-    <AuthContext.Provider value={{ user, setUser, googleSignIn, logOut }}>
+    <AuthContext.Provider value={{ user, googleSignIn, logOut }}>
       {children}
     </AuthContext.Provider>
   )

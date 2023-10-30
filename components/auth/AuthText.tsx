@@ -11,7 +11,6 @@ interface AuthTextProps {}
 
 function AuthText (props: AuthTextProps) {
   const { user, logOut }: any = UserAuth()
-  console.log('Textten', user)
 
   const handleSignOut = async () => {
     try {

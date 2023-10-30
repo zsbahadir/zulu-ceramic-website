@@ -30,10 +30,10 @@ function FormLayout (props: FormLayoutProps) {
   } = props
 
   return (
-    <form onSubmit={onSubmit}>
-      <div className='flex w-72'>
-        <div className={`w-full bg-${bgColor} grid place-items-center`}>
-          <div className='m-2 text-center w-full h-full inline-grid place-content-center flex-col space-y-6'>
+    <div className='flex w-72'>
+      <div className={`w-full bg-${bgColor} grid place-items-center`}>
+        <div className='m-2 text-center w-full h-full inline-grid place-content-center flex-col space-y-6'>
+          <form onSubmit={onSubmit}>
             {formTitle && <Text text={formTitle} className={titleClassName} />}
 
             {children}
@@ -45,10 +45,10 @@ function FormLayout (props: FormLayoutProps) {
               label={buttonLabel}
               type='submit'
             />
-          </div>
+          </form>
         </div>
       </div>
-    </form>
+    </div>
   )
 }
 

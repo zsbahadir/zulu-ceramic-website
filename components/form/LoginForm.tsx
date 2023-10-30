@@ -31,7 +31,6 @@ function LoginForm (props: LoginFormProps) {
 
   //Login with Google
   const { user, googleSignIn }: any = UserAuth()
-  console.log('Textten', user)
 
   const handleGoogleSignIn = async () => {
     try {

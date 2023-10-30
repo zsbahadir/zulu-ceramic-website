@@ -4,18 +4,12 @@ import { UserAuth } from '@/app/context/AuthContext'
 import AuthButttons from './AuthButtons'
 import AuthText from './AuthText'
 
-interface AuthNameTextProps {
-  className?: string
-}
+interface AuthSectionProps {}
 
-function AuthSection (props: AuthNameTextProps) {
-  const { className } = props
-
+function AuthSection (props: AuthSectionProps) {
   const { user }: any = UserAuth()
 
-  return (
-    <div className={className}>{user ? <AuthText /> : <AuthButttons />}</div>
-  )
+  return <div>{user ? <AuthText /> : <AuthButttons />}</div>
 }
 
 export default AuthSection
