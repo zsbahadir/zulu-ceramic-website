@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zulu Handcrafted Ceramics Website
+
+This project is a custom-designed website for a company that sells handcrafted ceramic products.
+
+## Project Summary
+
+This website allows customers to explore and purchase handcrafted ceramic products. Key features include a product catalog, add to cart functionality, payment processing, and user account management.
+Active developments and improvements are being made in the project.
+
+## Technologies Used
+
+The following technologies were used in this project:
+
+- [Next.js](https://nextjs.org/): A framework used to build fast and scalable React applications.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid and customizable styling.
+- [TypeScript](https://www.typescriptlang.org/): A programming language that provides type safety.
+- [Prettier](https://prettier.io/): A tool that automatically formats code.
+- [Yarn](https://yarnpkg.com/): A JavaScript tool used for package management.
+- [React Icons](https://react-icons.github.io/react-icons/): A library providing icons for React applications.
+- [Swiper](https://swiperjs.com/): A slider library with touch-swiping capabilities.
 
 ## Getting Started
 
-First, run the development server:
+1. **Installation:**
+   ```bash
+   yarn install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Responsive Design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The current version of the site is optimized for screens with a width of 1440px or larger (@media (min-width: 1440px)).
+Responsive improvements are actively being developed to ensure a seamless experience across various devices.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is deployed on Vercel. View the live site here.
+https://zulu-ceramic.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Interface Design on Figma
+
+It also includes a unique user interface designed on Figma.
+Figma Link: https://www.figma.com/file/pdjKG3y2E6EnKCBwdjiLMz/Zulu?type=design&node-id=0%3A1&mode=design&t=eRPnaaQ88dKOFSUw-1

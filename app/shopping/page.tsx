@@ -1,16 +1,15 @@
-
 //import partials
-import Section from "@/app/shopping/partials/section";
+import Section from '@/components/sections/section'
 
 //Import Components
-import ScrollToTopButton from "@/components/navigation/ScrollToTop";
-import Header from "@/components/layout/Header";
+import ScrollToTopButton from '@/components/navigation/ScrollToTop'
+import Header from '@/components/layout/Header'
 
 //Import Shopping Images
-import cupsShopping from '@/public/images/shopping/cupsShopping.jpg';
-import ornamentsShopping from '@/public/images/shopping/ornamentsShopping.jpg';
-import platesShopping from '@/public/images/shopping/platesShopping.jpg';
-import outletShopping from '@/public/images/shopping/outletShopping.jpg';
+import cupsShopping from '@/public/images/shopping/cupsShopping.jpg'
+import ornamentsShopping from '@/public/images/shopping/ornamentsShopping.jpg'
+import platesShopping from '@/public/images/shopping/platesShopping.jpg'
+import outletShopping from '@/public/images/shopping/outletShopping.jpg'
 
 //Import Mini Cup images
 import blueMini from '@/public/images/shopping/CupsMini/blueMini.jpg'
@@ -31,176 +30,200 @@ import pinkMidi from '@/public/images/shopping/CupsMidi/pinkMidi.jpg'
 import turquazMidi from '@/public/images/shopping/CupsMidi/turquazMidi.jpg'
 
 //Import select Cup Images
-import espressoImage from '@/public/images/shopping/CupsMidi/espressoImage.jpg';
-import filterCoffeeImage from '@/public/images/shopping/CupsMidi/filterCoffeeImage.jpg';
-
+import espressoImage from '@/public/images/shopping/CupsMidi/espressoImage.jpg'
+import filterCoffeeImage from '@/public/images/shopping/CupsMidi/filterCoffeeImage.jpg'
+import LoginModal from '@/components/modal/LoginModal'
 
 const images = [
   {
-      src: cupsShopping,
-      alt: "Cups Shopping Image",
-      label: "Cups",
-      link: ""
+    src: cupsShopping,
+    alt: 'Cups Shopping Image',
+    label: 'Cups',
+    link: ''
   },
   {
-      src: ornamentsShopping,
-      alt: "Ornaments Shopping Image",
-      label: "Ornaments",
-      link: ""
+    src: ornamentsShopping,
+    alt: 'Ornaments Shopping Image',
+    label: 'Ornaments',
+    link: ''
   },
   {
-      src: platesShopping,
-      alt: "Plates Shopping Image",
-      label: "Plates",
-      link: ""
+    src: platesShopping,
+    alt: 'Plates Shopping Image',
+    label: 'Plates',
+    link: ''
   },
   {
-      src: outletShopping,
-      alt: "Outlet Shopping Image",
-      label: "Outlet",
-      link: ""
-  },
+    src: outletShopping,
+    alt: 'Outlet Shopping Image',
+    label: 'Outlet',
+    link: ''
+  }
 ]
 
 const cupsImages = [
   {
     src: espressoImage,
-    alt: "espressoImage_Img",
-    label: "Espresso Cups",
+    alt: 'espressoImage_Img',
+    label: 'Espresso Cups'
   },
   {
     src: filterCoffeeImage,
-    alt: "filterCoffeImage_Img",
-    label: "Filter Coffee / Latte Cups",
-  },
+    alt: 'filterCoffeImage_Img',
+    label: 'Filter Coffee / Latte Cups'
+  }
 ]
 
+const miniCups = [
+  {
+    id: 1,
+    src: blueMini,
+    alt: 'blueMini_Img',
+    name: 'Blue',
+    price: 24
+  },
+  {
+    id: 2,
+    src: grayMini,
+    alt: 'grayMini_Img',
+    name: 'Gray',
+    price: 24
+  },
+  {
+    id: 3,
+    src: greenMini,
+    alt: 'greenMini_Img',
+    name: 'Green',
+    price: 24
+  },
+  {
+    id: 4,
+    src: lightBlueMini,
+    alt: 'lightBlueMini_Img',
+    name: 'Light Blue',
+    price: 24
+  },
+  {
+    id: 5,
+    src: orangeMini,
+    alt: 'orangeMini_Img',
+    name: 'Orange',
+    price: 24
+  },
+  {
+    id: 6,
+    src: pinkMini,
+    alt: 'pinkMini_Img',
+    name: 'Pink',
+    price: 24
+  },
+  {
+    id: 7,
+    src: turquazMini,
+    alt: 'turquazMini_Img',
+    name: 'Turquaz',
+    price: 24
+  },
+  {
+    id: 8,
+    src: yellowMini,
+    alt: 'yellowMini_Img',
+    name: 'Yellow',
+    price: 24
+  }
+]
 
-  const miniCups = [
-    {
-      id: 1,
-      src: blueMini,
-      alt: "blueMini_Img",
-      name: "Blue",
-      price: 24
-    },
-    {
-      id: 2,
-      src: grayMini,
-      alt: "grayMini_Img",
-      name: "Gray",
-      price: 24
-    },
-    {
-      id: 3,
-      src: greenMini,
-      alt: "greenMini_Img",
-      name: "Green",
-      price: 24
-    },
-    {
-      id: 4,
-      src: lightBlueMini,
-      alt: "lightBlueMini_Img",
-      name: "Light Blue",
-      price: 24
-    },
-    {
-      id: 5,
-      src: orangeMini,
-      alt: "orangeMini_Img",
-      name: "Orange",
-      price: 24
-    },
-    {
-      id: 6,
-      src: pinkMini,
-      alt: "pinkMini_Img",
-      name: "Pink",
-      price: 24
-    },
-    {
-      id: 7,
-      src: turquazMini,
-      alt: "turquazMini_Img",
-      name: "Turquaz",
-      price: 24
-    },
-    {
-      id: 8,
-      src: yellowMini,
-      alt: "yellowMini_Img",
-      name: "Yellow",
-      price: 24
-    },
-  ];
+const midiCupImages = [
+  {
+    src: blueMidi,
+    alt: 'blueMidi_Img',
+    name: 'Blue',
+    price: 31
+  },
+  {
+    src: grayMidi,
+    alt: 'grayMidi_Img',
+    name: 'Gray',
+    price: 31
+  },
+  {
+    src: greenMidi,
+    alt: 'greenMidi_Img',
+    name: 'Green',
+    price: 31
+  },
+  {
+    src: orangeMidi,
+    alt: 'orangeMidi_Img',
+    name: 'Orange',
+    price: 31
+  },
+  {
+    src: pinkMidi,
+    alt: 'pinkMidi_Img',
+    name: 'Pink',
+    price: 31
+  },
+  {
+    src: turquazMidi,
+    alt: 'turquazMidi_Img',
+    name: 'Turquaz',
+    price: 31
+  },
+  {
+    src: yellowMini,
+    alt: 'yellowMini_Img',
+    name: 'Yellow',
+    price: 31
+  }
+]
 
-  const midiCupImages = [
-    {
-      src: blueMidi,
-      alt: "blueMidi_Img",
-      name: "Blue",
-      price: 31
-    },
-    {
-      src: grayMidi,
-      alt: "grayMidi_Img",
-      name: "Gray",
-      price: 31
-    },
-    {
-      src: greenMidi,
-      alt: "greenMidi_Img",
-      name: "Green",
-      price: 31
-    },
-    {
-      src: orangeMidi,
-      alt: "orangeMidi_Img",
-      name: "Orange",
-      price: 31
-    },
-    {
-      src: pinkMidi,
-      alt: "pinkMidi_Img",
-      name: "Pink",
-      price: 31
-    },
-    {
-      src: turquazMidi,
-      alt: "turquazMidi_Img",
-      name: "Turquaz",
-      price: 31
-    },
-    {
-      src: yellowMini,
-      alt: "yellowMini_Img",
-      name: "Yellow",
-      price: 31
-    },
-  ];
+function Shopping () {
+  return (
+    <div className='mt-4'>
+      <div className='flex justify-center items-center my-24'>
+        <Section
+          title={''}
+          images={images?.slice(0, 3)}
+          cols={3}
+          gap={4}
+          text_size={'lg'}
+          id={''}
+          hasLine={false}
+        />
+      </div>
 
-
-
-
-function Shopping() {
-
-    return (
-      <div className="mt-4">
-
-           <Header homePage={false} hasLine/>
-            <div className="flex justify-center items-center my-24">
-            <Section title={""} images={images?.slice(0,3)} cols={3} gap={4} text_size={"lg"} id={""} hasLine={false} />
-            </div>
-
-            <Section title={"Cups"} images={cupsImages} cols={2} gap={3} text_size={"md"} id={'cups'} hasLine/>
-            <Section title={"Espresso Cups"} images={miniCups} cols={3} gap={4} text_size={"sm"} id={""} target="_blank" hasLine/>
-            <Section title={"Filter Coffee / Latte Cups"} images={midiCupImages} cols={3} gap={4} text_size={"sm"} id={""} hasLine/>
-            <ScrollToTopButton/>
-
-
-        </div>
-    )
+      <Section
+        title={'Cups'}
+        images={cupsImages}
+        cols={2}
+        gap={3}
+        text_size={'md'}
+        id={'cups'}
+        hasLine
+      />
+      <Section
+        title={'Espresso Cups'}
+        images={miniCups}
+        cols={3}
+        gap={4}
+        text_size={'sm'}
+        id={''}
+        target='_blank'
+        hasLine
+      />
+      <Section
+        title={'Filter Coffee / Latte Cups'}
+        images={midiCupImages}
+        cols={3}
+        gap={4}
+        text_size={'sm'}
+        id={''}
+        hasLine
+      />
+      <ScrollToTopButton />
+    </div>
+  )
 }
 
-export default Shopping;
+export default Shopping
