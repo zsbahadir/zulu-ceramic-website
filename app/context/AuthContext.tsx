@@ -18,15 +18,12 @@ import { auth } from '@/app/firebase/firebase.config'
 
 interface AuthContextProps {
   children: ReactNode
-  user: User | null // Assuming User is the type from 'firebase/auth'
-  googleSignIn: () => void
-  logOut: () => void
 }
 
 interface AuthContextType {
-  // user: User | null // Assuming User is the type from 'firebase/auth'
-  // googleSignIn: () => void
-  // logOut: () => void
+  user: User | null // Assuming User is the type from 'firebase/auth'
+  googleSignIn: () => void
+  logOut: () => void
 }
 
 export const AuthContext = createContext<AuthContextType | undefined>(undefined)
