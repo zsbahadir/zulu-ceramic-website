@@ -62,7 +62,7 @@ const sections = [
   },
   {
     title: 'Auth Name ',
-    component: <AuthNameText className={''} />
+    component: <AuthNameText />
   },
   {
     title: 'Basic Image Container',
