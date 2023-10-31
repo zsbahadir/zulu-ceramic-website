@@ -17,14 +17,14 @@ interface ShoppingLayoutProps {
 export default function ShoppingLayout (props: ShoppingLayoutProps) {
   const { children } = props
   return (
-    <html lang='en'>
-      <body>
-        <AuthContextProvider>
+    <AuthContextProvider>
+      <html lang='en'>
+        <body>
           <Header homePage={false} hasLine hasAuth={true} />
           {children}
           {/* <Footer /> */}
-        </AuthContextProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </AuthContextProvider>
   )
 }

@@ -5,7 +5,6 @@ import { UserAuth } from '@/app/context/AuthContext'
 //import icons
 import { FaShoppingBasket } from 'react-icons/fa'
 import Button from '../cta/Button'
-import Text from '../text/Text'
 
 interface AuthTextProps {}
 
