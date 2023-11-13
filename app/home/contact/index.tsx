@@ -5,7 +5,6 @@ import ContactUsImage from '@/public/images/contactUsImage.jpg'
 import ContactPageForm from './partials/ContactPageForm'
 import Card from '@/components/card/Card'
 import ContactPageLayout from './partials/ContactPageLayout'
-import Footer from '@/components/layout/Footer'
 
 function ContactUsSection () {
   return (

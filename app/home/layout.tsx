@@ -1,6 +1,3 @@
-// import '@/styles/reset.css'
-// import '@/styles/globals.css'
-
 //Import Components
 import Footer from '@/components/layout/Footer'
 
@@ -13,7 +10,6 @@ export default function HomeLayout (props: HomeLayoutProps) {
   return (
     <html lang='en'>
       <body>
-        {/* <Header/> */}
         <main>{children}</main>
         <Footer />
       </body>
