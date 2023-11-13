@@ -10,7 +10,6 @@ import LocationText from './partials/location-text'
 //Components
 import Button from '@/components/cta/Button'
 import SliderImages from './partials/slider-images'
-import Portal from '@/components/modal/Portal'
 
 function HomePage () {
   //for going to contact us page when click the button

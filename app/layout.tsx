@@ -4,9 +4,6 @@ import '@/styles/globals.css'
 import ShoppingLayout from './shopping/layout'
 import HomeLayout from './home/layout'
 
-//Import Components
-// import Footer from "../components/Footer";
-
 export const metadata = {
   title: 'Zulu Ceramics',
   description: 'Zulu Ceramic Website'
@@ -23,7 +20,7 @@ export default function RootLayout (props: RootLayoutProps) {
     <html lang='en'>
       <body>
         {isShoppingPage ? (
-          <ShoppingLayout>{children}</ShoppingLayout>
+          <ShoppingLayout isShoppingPage>{children}</ShoppingLayout>
         ) : (
           <HomeLayout>{children}</HomeLayout>
         )}

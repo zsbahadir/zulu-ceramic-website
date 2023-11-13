@@ -12,10 +12,11 @@ export const metadata = {
 
 interface ShoppingLayoutProps {
   children: React.ReactNode
+  isShoppingPage: boolean
 }
 
 export default function ShoppingLayout (props: ShoppingLayoutProps) {
-  const { children } = props
+  const { children, isShoppingPage } = props
   return (
     <AuthContextProvider>
       <html lang='en'>
